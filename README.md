@@ -1,7 +1,6 @@
 # Assignment-5-GEOM2157
-My assignment 
-
-my script will reclassify a DEM raster into 1 or 0 based on flood levels. This will help to to identify areas that are flooded = 0 or not flooded = 1
+My script will reclassify a DEM raster into 1 or 0 based on flood levels. This will help to to identify areas that are flooded = 0 or not flooded = 1
+This script can be added directly into QGIS proccesing toolbox > create a new python script. 
 
     from qgis.core import QgsProcessing
     from qgis.core import QgsProcessingAlgorithm
@@ -28,7 +27,7 @@ my script will reclassify a DEM raster into 1 or 0 based on flood levels. This w
         'DATA_TYPE': 5,
         'INPUT_RASTER': parameters['RastertoReclassify'],
         'RASTER_BAND' : 1,
-        'TABLE' : [-10,INPUT_floodlevel,0,INPUT_floodlevel+1,788,1], 
+        'TABLE' : [0,INPUT_floodlevel,0,INPUT_floodlevel+1,16,1], 
         'NO_DATA' : -9999, 
         'RANGE_BOUNDARIES' : 0,
         'NODATA_FOR_MISSING' : False, 
@@ -54,3 +53,5 @@ my script will reclassify a DEM raster into 1 or 0 based on flood levels. This w
 
     def createInstance(self):
       return ReclassifyRasterAccordingToFloodLevel()
+
+[sg_dem.zip](https://github.com/Nfrancis2/Assignment-5-GEOM2157/files/7358646/sg_dem.zip)
