@@ -21,9 +21,9 @@ def initAlgorithm(self, config=None):
 def processAlgorithm(self, parameters, context, model_feedback):
 
 
-# Reclassify with table
-# INPUT_floodlevel is an integer value of the flood level in units relative to the DEM layer 
-# e.g. if the DEM layer is in meters the INPUT_floodlevel
+    # Reclassify with table
+    # INPUT_floodlevel is an integer value of the flood level in units relative to the DEM layer 
+    # e.g. if the DEM layer is in meters the INPUT_floodlevel
 alg_params = {
     'DATA_TYPE': 5,
     'INPUT_RASTER': parameters['RastertoReclassify'],
