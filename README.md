@@ -1,7 +1,7 @@
 # Assignment-5-GEOM2157
 My assignment 
 
-my script will help reclassify rasters to identify areas that are flooded
+my script will reclassify a DEM raster into 1 or 0 based on flood levels. This will help to to identify areas that are flooded = 0 or not flooded = 1
 
     from qgis.core import QgsProcessing
     from qgis.core import QgsProcessingAlgorithm
